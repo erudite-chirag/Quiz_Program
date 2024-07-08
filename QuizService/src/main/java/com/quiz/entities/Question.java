@@ -9,19 +9,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
-
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
-@Entity
-public class Quiz {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private  Long id;
-    private  String title;
-    transient  private List<Question> questions;
-
-
+@NoArgsConstructor
+public class Question {
+    private Long questionId;
+    private String question;
+    private Long quizId;
 }
+
