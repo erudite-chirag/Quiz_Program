@@ -12,11 +12,13 @@
         <module name="ServiceRegistry" />
         <module name="QuestionService" />
         <module name="ResultService" />
+        <module name="ApiGateway" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ApiGateway" options="-parameters" />
       <module name="QuestionService" options="-parameters" />
       <module name="QuizService" options="-parameters" />
       <module name="ReportService" options="-parameters" />
